@@ -1,0 +1,636 @@
+Using 2 GPUs.
+
+Initial Configuration:
+- CPUs: 96
+- Memory: 404.33 GB
+- GPUs: 2
+
+Resetting Environment:
+- CPUs: 96
+- Memory: 404.33 GB
+- GPUs: 2
+Episode 1/100, Total Reward: -2421.06, Accuracy: 90.20%, Time: 1.17s
+
+Resetting Environment:
+- CPUs: 96.0
+- Memory: 404.33 GB
+- GPUs: 1.0
+Episode 2/100, Total Reward: -2397.46, Accuracy: 91.90%, Time: 1.14s
+
+Resetting Environment:
+- CPUs: 95.0
+- Memory: 404.33 GB
+- GPUs: 1.0
+Episode 3/100, Total Reward: -2375.10, Accuracy: 91.34%, Time: 1.18s
+
+Resetting Environment:
+- CPUs: 94.0
+- Memory: 400.33 GB
+- GPUs: 2.0
+Episode 4/100, Total Reward: -2387.29, Accuracy: 90.06%, Time: 1.17s
+
+Resetting Environment:
+- CPUs: 94.0
+- Memory: 404.33 GB
+- GPUs: 1.0
+Episode 5/100, Total Reward: -2348.99, Accuracy: 93.75%, Time: 1.08s
+
+Resetting Environment:
+- CPUs: 91.0
+- Memory: 404.33 GB
+- GPUs: 2.0
+Episode 6/100, Total Reward: -2272.48, Accuracy: 93.89%, Time: 1.26s
+
+Resetting Environment:
+- CPUs: 90.0
+- Memory: 376.33 GB
+- GPUs: 1.0
+Episode 7/100, Total Reward: -2254.92, Accuracy: 95.17%, Time: 1.14s
+
+Resetting Environment:
+- CPUs: 91.0
+- Memory: 384.33 GB
+- GPUs: 1.0
+Episode 8/100, Total Reward: -2268.19, Accuracy: 95.88%, Time: 1.17s
+
+Resetting Environment:
+- CPUs: 93.0
+- Memory: 372.33 GB
+- GPUs: 1.0
+Episode 9/100, Total Reward: -2212.68, Accuracy: 94.89%, Time: 1.01s
+
+Resetting Environment:
+- CPUs: 95.0
+- Memory: 352.33 GB
+- GPUs: 2.0
+Episode 10/100, Total Reward: -2115.72, Accuracy: 95.88%, Time: 1.18s
+
+Resetting Environment:
+- CPUs: 91.0
+- Memory: 328.33 GB
+- GPUs: 2.0
+Episode 11/100, Total Reward: -1990.50, Accuracy: 96.59%, Time: 1.04s
+
+Resetting Environment:
+- CPUs: 88.0
+- Memory: 316.33 GB
+- GPUs: 2.0
+Episode 12/100, Total Reward: -1966.20, Accuracy: 95.17%, Time: 1.19s
+
+Resetting Environment:
+- CPUs: 88.0
+- Memory: 320.33 GB
+- GPUs: 1.0
+Episode 13/100, Total Reward: -1967.77, Accuracy: 96.16%, Time: 1.17s
+
+Resetting Environment:
+- CPUs: 90.0
+- Memory: 312.33 GB
+- GPUs: 1.0
+Episode 14/100, Total Reward: -1967.81, Accuracy: 96.88%, Time: 1.05s
+
+Resetting Environment:
+- CPUs: 93.0
+- Memory: 300.33 GB
+- GPUs: 2.0
+Episode 15/100, Total Reward: -1896.17, Accuracy: 96.45%, Time: 1.30s
+
+Resetting Environment:
+- CPUs: 90.0
+- Memory: 288.33 GB
+- GPUs: 1.0
+Episode 16/100, Total Reward: -1845.61, Accuracy: 98.01%, Time: 1.19s
+
+Resetting Environment:
+- CPUs: 92.0
+- Memory: 280.33 GB
+- GPUs: 2.0
+Episode 17/100, Total Reward: -1872.52, Accuracy: 96.88%, Time: 1.03s
+
+Resetting Environment:
+- CPUs: 92.0
+- Memory: 292.33 GB
+- GPUs: 1.0
+Episode 18/100, Total Reward: -1891.16, Accuracy: 97.16%, Time: 1.24s
+
+Resetting Environment:
+- CPUs: 94.0
+- Memory: 288.33 GB
+- GPUs: 2.0
+Episode 19/100, Total Reward: -1920.69, Accuracy: 96.45%, Time: 1.21s
+
+Resetting Environment:
+- CPUs: 93.0
+- Memory: 296.33 GB
+- GPUs: 2.0
+Episode 20/100, Total Reward: -1902.15, Accuracy: 97.44%, Time: 1.21s
+
+Resetting Environment:
+- CPUs: 92.0
+- Memory: 284.33 GB
+- GPUs: 1.0
+Episode 21/100, Total Reward: -1914.74, Accuracy: 96.45%, Time: 1.16s
+
+Resetting Environment:
+- CPUs: 90.0
+- Memory: 296.33 GB
+- GPUs: 1.0
+Episode 22/100, Total Reward: -1911.70, Accuracy: 97.16%, Time: 1.18s
+
+Resetting Environment:
+- CPUs: 88.0
+- Memory: 312.33 GB
+- GPUs: 1.0
+Episode 23/100, Total Reward: -1959.55, Accuracy: 97.73%, Time: 1.03s
+
+Resetting Environment:
+- CPUs: 89.0
+- Memory: 324.33 GB
+- GPUs: 2.0
+Episode 24/100, Total Reward: -2063.10, Accuracy: 97.59%, Time: 1.03s
+
+Resetting Environment:
+- CPUs: 92.0
+- Memory: 328.33 GB
+- GPUs: 2.0
+Episode 25/100, Total Reward: -2036.94, Accuracy: 97.16%, Time: 1.11s
+
+Resetting Environment:
+- CPUs: 88.0
+- Memory: 324.33 GB
+- GPUs: 1.0
+Episode 26/100, Total Reward: -2038.77, Accuracy: 97.87%, Time: 1.22s
+
+Resetting Environment:
+- CPUs: 89.0
+- Memory: 344.33 GB
+- GPUs: 1.0
+Episode 27/100, Total Reward: -2136.49, Accuracy: 97.73%, Time: 1.08s
+
+Resetting Environment:
+- CPUs: 89.0
+- Memory: 352.33 GB
+- GPUs: 1.0
+Episode 28/100, Total Reward: -2080.11, Accuracy: 97.30%, Time: 1.01s
+
+Resetting Environment:
+- CPUs: 87.0
+- Memory: 344.33 GB
+- GPUs: 2.0
+Episode 29/100, Total Reward: -2045.78, Accuracy: 97.16%, Time: 1.13s
+
+Resetting Environment:
+- CPUs: 85.0
+- Memory: 340.33 GB
+- GPUs: 2.0
+Episode 30/100, Total Reward: -2030.94, Accuracy: 97.59%, Time: 1.63s
+
+Resetting Environment:
+- CPUs: 88.0
+- Memory: 340.33 GB
+- GPUs: 1.0
+Episode 31/100, Total Reward: -2047.56, Accuracy: 97.87%, Time: 1.13s
+
+Resetting Environment:
+- CPUs: 89.0
+- Memory: 332.33 GB
+- GPUs: 1.0
+Episode 32/100, Total Reward: -2025.60, Accuracy: 98.58%, Time: 1.10s
+
+Resetting Environment:
+- CPUs: 85.0
+- Memory: 344.33 GB
+- GPUs: 2.0
+Episode 33/100, Total Reward: -1996.38, Accuracy: 97.59%, Time: 1.25s
+
+Resetting Environment:
+- CPUs: 85.0
+- Memory: 336.33 GB
+- GPUs: 2.0
+Episode 34/100, Total Reward: -1959.98, Accuracy: 97.87%, Time: 1.15s
+
+Resetting Environment:
+- CPUs: 80.0
+- Memory: 324.33 GB
+- GPUs: 2.0
+Episode 35/100, Total Reward: -1898.95, Accuracy: 98.72%, Time: 1.14s
+
+Resetting Environment:
+- CPUs: 80.0
+- Memory: 328.33 GB
+- GPUs: 1.0
+Episode 36/100, Total Reward: -1928.38, Accuracy: 98.15%, Time: 1.20s
+
+Resetting Environment:
+- CPUs: 79.0
+- Memory: 324.33 GB
+- GPUs: 2.0
+Episode 37/100, Total Reward: -1922.59, Accuracy: 98.44%, Time: 1.01s
+
+Resetting Environment:
+- CPUs: 82.0
+- Memory: 328.33 GB
+- GPUs: 2.0
+Episode 38/100, Total Reward: -1865.16, Accuracy: 98.30%, Time: 1.16s
+
+Resetting Environment:
+- CPUs: 75.0
+- Memory: 320.33 GB
+- GPUs: 1.0
+Episode 39/100, Total Reward: -1842.81, Accuracy: 98.44%, Time: 1.03s
+
+Resetting Environment:
+- CPUs: 78.0
+- Memory: 312.33 GB
+- GPUs: 1.0
+Episode 40/100, Total Reward: -1831.56, Accuracy: 98.44%, Time: 1.12s
+
+Resetting Environment:
+- CPUs: 75.0
+- Memory: 328.33 GB
+- GPUs: 1.0
+Episode 41/100, Total Reward: -1892.88, Accuracy: 98.15%, Time: 1.06s
+
+Resetting Environment:
+- CPUs: 76.0
+- Memory: 332.33 GB
+- GPUs: 1.0
+Episode 42/100, Total Reward: -1879.83, Accuracy: 98.15%, Time: 1.03s
+
+Resetting Environment:
+- CPUs: 72.0
+- Memory: 332.33 GB
+- GPUs: 2.0
+Episode 43/100, Total Reward: -1870.69, Accuracy: 97.87%, Time: 1.08s
+
+Resetting Environment:
+- CPUs: 70.0
+- Memory: 328.33 GB
+- GPUs: 1.0
+Episode 44/100, Total Reward: -1795.78, Accuracy: 98.58%, Time: 1.26s
+
+Resetting Environment:
+- CPUs: 68.0
+- Memory: 320.33 GB
+- GPUs: 2.0
+Episode 45/100, Total Reward: -1745.95, Accuracy: 98.86%, Time: 1.32s
+
+Resetting Environment:
+- CPUs: 68.0
+- Memory: 312.33 GB
+- GPUs: 1.0
+Episode 46/100, Total Reward: -1734.46, Accuracy: 97.87%, Time: 1.00s
+
+Resetting Environment:
+- CPUs: 67.0
+- Memory: 312.33 GB
+- GPUs: 1.0
+Episode 47/100, Total Reward: -1794.96, Accuracy: 98.30%, Time: 1.21s
+
+Resetting Environment:
+- CPUs: 69.0
+- Memory: 340.33 GB
+- GPUs: 2.0
+Episode 48/100, Total Reward: -1834.29, Accuracy: 97.59%, Time: 1.25s
+
+Resetting Environment:
+- CPUs: 70.0
+- Memory: 332.33 GB
+- GPUs: 1.0
+Episode 49/100, Total Reward: -1836.03, Accuracy: 98.44%, Time: 1.23s
+
+Resetting Environment:
+- CPUs: 72.0
+- Memory: 328.33 GB
+- GPUs: 1.0
+Episode 50/100, Total Reward: -1821.44, Accuracy: 97.87%, Time: 1.27s
+
+Resetting Environment:
+- CPUs: 75.0
+- Memory: 312.33 GB
+- GPUs: 1.0
+Episode 51/100, Total Reward: -1823.54, Accuracy: 98.30%, Time: 1.25s
+
+Resetting Environment:
+- CPUs: 75.0
+- Memory: 312.33 GB
+- GPUs: 1.0
+Episode 52/100, Total Reward: -1836.46, Accuracy: 99.01%, Time: 1.04s
+
+Resetting Environment:
+- CPUs: 76.0
+- Memory: 316.33 GB
+- GPUs: 2.0
+Episode 53/100, Total Reward: -1797.45, Accuracy: 98.44%, Time: 1.07s
+
+Resetting Environment:
+- CPUs: 73.0
+- Memory: 308.33 GB
+- GPUs: 2.0
+Episode 54/100, Total Reward: -1744.19, Accuracy: 99.29%, Time: 1.29s
+
+Resetting Environment:
+- CPUs: 72.0
+- Memory: 296.33 GB
+- GPUs: 2.0
+Episode 55/100, Total Reward: -1685.88, Accuracy: 99.15%, Time: 1.02s
+
+Resetting Environment:
+- CPUs: 68.0
+- Memory: 292.33 GB
+- GPUs: 2.0
+Episode 56/100, Total Reward: -1644.54, Accuracy: 99.01%, Time: 1.22s
+
+Resetting Environment:
+- CPUs: 67.0
+- Memory: 292.33 GB
+- GPUs: 2.0
+Episode 57/100, Total Reward: -1596.42, Accuracy: 98.01%, Time: 1.03s
+
+Resetting Environment:
+- CPUs: 66.0
+- Memory: 280.33 GB
+- GPUs: 1.0
+Episode 58/100, Total Reward: -1600.96, Accuracy: 99.01%, Time: 1.10s
+
+Resetting Environment:
+- CPUs: 63.0
+- Memory: 288.33 GB
+- GPUs: 1.0
+Episode 59/100, Total Reward: -1599.25, Accuracy: 99.01%, Time: 1.10s
+
+Resetting Environment:
+- CPUs: 63.0
+- Memory: 300.33 GB
+- GPUs: 1.0
+Episode 60/100, Total Reward: -1663.52, Accuracy: 98.30%, Time: 1.18s
+
+Resetting Environment:
+- CPUs: 63.0
+- Memory: 308.33 GB
+- GPUs: 1.0
+Episode 61/100, Total Reward: -1663.24, Accuracy: 99.01%, Time: 1.06s
+
+Resetting Environment:
+- CPUs: 65.0
+- Memory: 300.33 GB
+- GPUs: 1.0
+Episode 62/100, Total Reward: -1637.45, Accuracy: 99.01%, Time: 1.22s
+
+Resetting Environment:
+- CPUs: 62.0
+- Memory: 296.33 GB
+- GPUs: 2.0
+Episode 63/100, Total Reward: -1584.56, Accuracy: 98.72%, Time: 1.27s
+
+Resetting Environment:
+- CPUs: 61.0
+- Memory: 292.33 GB
+- GPUs: 1.0
+Episode 64/100, Total Reward: -1548.22, Accuracy: 98.86%, Time: 1.21s
+
+Resetting Environment:
+- CPUs: 61.0
+- Memory: 272.33 GB
+- GPUs: 1.0
+Episode 65/100, Total Reward: -1537.16, Accuracy: 99.15%, Time: 1.17s
+
+Resetting Environment:
+- CPUs: 61.0
+- Memory: 284.33 GB
+- GPUs: 2.0
+Episode 66/100, Total Reward: -1543.01, Accuracy: 99.29%, Time: 1.09s
+
+Resetting Environment:
+- CPUs: 64.0
+- Memory: 276.33 GB
+- GPUs: 1.0
+Episode 67/100, Total Reward: -1545.29, Accuracy: 98.15%, Time: 1.05s
+
+Resetting Environment:
+- CPUs: 68.0
+- Memory: 272.33 GB
+- GPUs: 2.0
+Episode 68/100, Total Reward: -1550.07, Accuracy: 98.30%, Time: 1.02s
+
+Resetting Environment:
+- CPUs: 70.0
+- Memory: 240.33 GB
+- GPUs: 1.0
+Episode 69/100, Total Reward: -1462.63, Accuracy: 98.86%, Time: 1.19s
+
+Resetting Environment:
+- CPUs: 68.0
+- Memory: 248.33 GB
+- GPUs: 1.0
+Episode 70/100, Total Reward: -1478.48, Accuracy: 98.86%, Time: 1.29s
+
+Resetting Environment:
+- CPUs: 63.0
+- Memory: 248.33 GB
+- GPUs: 1.0
+Episode 71/100, Total Reward: -1400.80, Accuracy: 98.86%, Time: 1.23s
+
+Resetting Environment:
+- CPUs: 63.0
+- Memory: 228.33 GB
+- GPUs: 2.0
+Episode 72/100, Total Reward: -1316.94, Accuracy: 99.15%, Time: 1.11s
+
+Resetting Environment:
+- CPUs: 61.0
+- Memory: 224.33 GB
+- GPUs: 2.0
+Episode 73/100, Total Reward: -1335.83, Accuracy: 99.15%, Time: 1.07s
+
+Resetting Environment:
+- CPUs: 64.0
+- Memory: 216.33 GB
+- GPUs: 2.0
+Episode 74/100, Total Reward: -1280.38, Accuracy: 99.72%, Time: 1.27s
+
+Resetting Environment:
+- CPUs: 60.0
+- Memory: 224.33 GB
+- GPUs: 2.0
+Episode 75/100, Total Reward: -1324.72, Accuracy: 98.44%, Time: 1.28s
+
+Resetting Environment:
+- CPUs: 58.0
+- Memory: 224.33 GB
+- GPUs: 2.0
+Episode 76/100, Total Reward: -1297.66, Accuracy: 99.57%, Time: 1.21s
+
+Resetting Environment:
+- CPUs: 58.0
+- Memory: 228.33 GB
+- GPUs: 2.0
+Episode 77/100, Total Reward: -1297.79, Accuracy: 98.15%, Time: 1.16s
+
+Resetting Environment:
+- CPUs: 56.0
+- Memory: 236.33 GB
+- GPUs: 1.0
+Episode 78/100, Total Reward: -1324.59, Accuracy: 99.29%, Time: 1.15s
+
+Resetting Environment:
+- CPUs: 56.0
+- Memory: 232.33 GB
+- GPUs: 1.0
+Episode 79/100, Total Reward: -1220.26, Accuracy: 98.86%, Time: 0.97s
+
+Resetting Environment:
+- CPUs: 56.0
+- Memory: 192.33 GB
+- GPUs: 2.0
+Episode 80/100, Total Reward: -1132.31, Accuracy: 99.15%, Time: 1.31s
+
+Resetting Environment:
+- CPUs: 61.0
+- Memory: 180.33 GB
+- GPUs: 2.0
+Episode 81/100, Total Reward: -1125.48, Accuracy: 98.44%, Time: 1.09s
+
+Resetting Environment:
+- CPUs: 60.0
+- Memory: 180.33 GB
+- GPUs: 2.0
+Episode 82/100, Total Reward: -1118.28, Accuracy: 99.15%, Time: 1.27s
+
+Resetting Environment:
+- CPUs: 57.0
+- Memory: 196.33 GB
+- GPUs: 1.0
+Episode 83/100, Total Reward: -1163.59, Accuracy: 98.72%, Time: 1.06s
+
+Resetting Environment:
+- CPUs: 58.0
+- Memory: 196.33 GB
+- GPUs: 1.0
+Episode 84/100, Total Reward: -1134.03, Accuracy: 99.29%, Time: 1.01s
+
+Resetting Environment:
+- CPUs: 53.0
+- Memory: 192.33 GB
+- GPUs: 1.0
+Episode 85/100, Total Reward: -1102.57, Accuracy: 99.15%, Time: 1.20s
+
+Resetting Environment:
+- CPUs: 51.0
+- Memory: 196.33 GB
+- GPUs: 1.0
+Episode 86/100, Total Reward: -1054.46, Accuracy: 99.15%, Time: 1.25s
+
+Resetting Environment:
+- CPUs: 48.0
+- Memory: 176.33 GB
+- GPUs: 1.0
+Episode 87/100, Total Reward: -910.92, Accuracy: 98.72%, Time: 1.30s
+
+Resetting Environment:
+- CPUs: 43.0
+- Memory: 160.33 GB
+- GPUs: 2.0
+Episode 88/100, Total Reward: -878.96, Accuracy: 99.01%, Time: 1.05s
+
+Resetting Environment:
+- CPUs: 45.0
+- Memory: 152.33 GB
+- GPUs: 2.0
+Episode 89/100, Total Reward: -856.44, Accuracy: 99.43%, Time: 1.02s
+
+Resetting Environment:
+- CPUs: 44.0
+- Memory: 152.33 GB
+- GPUs: 1.0
+Episode 90/100, Total Reward: -817.09, Accuracy: 98.72%, Time: 1.25s
+
+Resetting Environment:
+- CPUs: 40.0
+- Memory: 160.33 GB
+- GPUs: 2.0
+Episode 91/100, Total Reward: -788.68, Accuracy: 99.29%, Time: 1.06s
+
+Resetting Environment:
+- CPUs: 41.0
+- Memory: 128.33 GB
+- GPUs: 2.0
+Episode 92/100, Total Reward: -719.15, Accuracy: 99.15%, Time: 1.19s
+
+Resetting Environment:
+- CPUs: 39.0
+- Memory: 128.33 GB
+- GPUs: 2.0
+Episode 93/100, Total Reward: -706.09, Accuracy: 99.29%, Time: 1.29s
+
+Resetting Environment:
+- CPUs: 38.0
+- Memory: 124.33 GB
+- GPUs: 1.0
+Episode 94/100, Total Reward: -663.24, Accuracy: 99.29%, Time: 1.08s
+
+Resetting Environment:
+- CPUs: 38.0
+- Memory: 116.33 GB
+- GPUs: 2.0
+Episode 95/100, Total Reward: -643.74, Accuracy: 99.43%, Time: 1.04s
+
+Resetting Environment:
+- CPUs: 40.0
+- Memory: 96.33 GB
+- GPUs: 1.0
+Episode 96/100, Total Reward: -583.80, Accuracy: 99.29%, Time: 1.23s
+
+Resetting Environment:
+- CPUs: 41.0
+- Memory: 84.33 GB
+- GPUs: 2.0
+Episode 97/100, Total Reward: -487.83, Accuracy: 99.01%, Time: 1.04s
+
+Resetting Environment:
+- CPUs: 34.0
+- Memory: 72.33 GB
+- GPUs: 1.0
+Episode 98/100, Total Reward: -452.28, Accuracy: 99.29%, Time: 1.07s
+
+Resetting Environment:
+- CPUs: 36.0
+- Memory: 72.33 GB
+- GPUs: 1.0
+Episode 99/100, Total Reward: -458.59, Accuracy: 98.86%, Time: 1.28s
+
+Resetting Environment:
+- CPUs: 35.0
+- Memory: 72.33 GB
+- GPUs: 1.0
+Episode 100/100, Total Reward: -405.83, Accuracy: 99.43%, Time: 1.32s
+
+=================== Final Optimization Results ===================
+Dataset: MNIST
+Model: Fully Connected NN
+
+Started Configuration:
+- GPUs: 2, CPUs: 96, Memory: 404.33 GB
+- Estimated Total Training Time: 0.48 minutes
+
+Optimal Configuration:
+- GPUs: 2.0
+- CPUs: 27.0
+- Memory: 72.33 GB
+- Total Actual Training Time: 38.54 minutes
+
+Training Metrics:
+- Final Accuracy: 99.43%
+- Final Loss: 0.0201
+- Total Reward: -405.83
+
+Comparison of Configurations:
++----------------+----------+-----------+---------+---------+----------------+
+| Configuration  | Time (m) | Cost ($)  | Accuracy| CPUs/GPU| Time Reduction |
++----------------+----------+-----------+---------+---------+----------------+
+| Initial        | 0.48    | 1.50      | 99.01   | 96/2   | Baseline       |
+| RL Optimized   | 38.54    | 0.38      | 99.43   | 27.0/2.0   | --7968.01%       |
++----------------+----------+-----------+---------+---------+----------------+
+
+Cost Savings Achieved: 74.67%
+===================================================================
