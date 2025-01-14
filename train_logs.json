@@ -1,0 +1,1603 @@
+    {
+        "Episode": 97,
+        "Initial State": [
+            41.0,
+            84.33468627929688,
+            2.0
+        ],
+        "Steps": [
+            {
+                "State": [
+                    40.0,
+                    84.33468627929688,
+                    2.0
+                ],
+                "Action": 0,
+                "Reward": -27.104546242098284,
+                "Metrics": {
+                    "loss": 0.00919989532981576,
+                    "accuracy": 99.7159090909091,
+                    "time": 1.0571630001068115
+                },
+                "Environment": {
+                    "CPU Usage (%)": 4.0,
+                    "Available Memory (MB)": 383325.904896,
+                    "GPU Memory Allocated (MB)": 37.105152
+                }
+            },
+            {
+                "State": [
+                    41.0,
+                    84.33468627929688,
+                    2.0
+                ],
+                "Action": 1,
+                "Reward": -27.645271710052413,
+                "Metrics": {
+                    "loss": 0.02151627237485214,
+                    "accuracy": 99.43181818181819,
+                    "time": 1.0196754932403564
+                },
+                "Environment": {
+                    "CPU Usage (%)": 4.0,
+                    "Available Memory (MB)": 383325.528064,
+                    "GPU Memory Allocated (MB)": 37.105664
+                }
+            },
+            {
+                "State": [
+                    41.0,
+                    84.33468627929688,
+                    1.0
+                ],
+                "Action": 5,
+                "Reward": -27.607263386465444,
+                "Metrics": {
+                    "loss": 0.026689766969701104,
+                    "accuracy": 98.86363636363636,
+                    "time": 1.2124066352844238
+                },
+                "Environment": {
+                    "CPU Usage (%)": 4.1,
+                    "Available Memory (MB)": 383325.0816,
+                    "GPU Memory Allocated (MB)": 37.106176
+                }
+            },
+            {
+                "State": [
+                    40.0,
+                    84.33468627929688,
+                    1.0
+                ],
+                "Action": 0,
+                "Reward": -27.11825148018755,
+                "Metrics": {
+                    "loss": 0.02347331523725932,
+                    "accuracy": 98.7215909090909,
+                    "time": 1.1538095474243164
+                },
+                "Environment": {
+                    "CPU Usage (%)": 4.1,
+                    "Available Memory (MB)": 383325.630464,
+                    "GPU Memory Allocated (MB)": 37.106688
+                }
+            },
+            {
+                "State": [
+                    39.0,
+                    84.33468627929688,
+                    1.0
+                ],
+                "Action": 0,
+                "Reward": -26.57293764009585,
+                "Metrics": {
+                    "loss": 0.02077311150920154,
+                    "accuracy": 99.14772727272727,
+                    "time": 1.2512080669403076
+                },
+                "Environment": {
+                    "CPU Usage (%)": 4.2,
+                    "Available Memory (MB)": 383326.695424,
+                    "GPU Memory Allocated (MB)": 37.1072
+                }
+            },
+            {
+                "State": [
+                    39.0,
+                    80.33468627929688,
+                    1.0
+                ],
+                "Action": 2,
+                "Reward": -25.900873043117198,
+                "Metrics": {
+                    "loss": 0.04927669634873217,
+                    "accuracy": 98.1534090909091,
+                    "time": 1.0957801342010498
+                },
+                "Environment": {
+                    "CPU Usage (%)": 4.1,
+                    "Available Memory (MB)": 383325.986816,
+                    "GPU Memory Allocated (MB)": 37.107712
+                }
+            },
+            {
+                "State": [
+                    38.0,
+                    80.33468627929688,
+                    1.0
+                ],
+                "Action": 0,
+                "Reward": -25.280349446215077,
+                "Metrics": {
+                    "loss": 0.028184917628426443,
+                    "accuracy": 99.14772727272727,
+                    "time": 1.2183988094329834
+                },
+                "Environment": {
+                    "CPU Usage (%)": 4.1,
+                    "Available Memory (MB)": 383326.425088,
+                    "GPU Memory Allocated (MB)": 37.108224
+                }
+            },
+            {
+                "State": [
+                    38.0,
+                    76.33468627929688,
+                    1.0
+                ],
+                "Action": 2,
+                "Reward": -24.561717368643308,
+                "Metrics": {
+                    "loss": 0.03853011278393255,
+                    "accuracy": 98.4375,
+                    "time": 1.0099570751190186
+                },
+                "Environment": {
+                    "CPU Usage (%)": 4.0,
+                    "Available Memory (MB)": 383324.65152,
+                    "GPU Memory Allocated (MB)": 37.108736
+                }
+            },
+            {
+                "State": [
+                    37.0,
+                    76.33468627929688,
+                    1.0
+                ],
+                "Action": 0,
+                "Reward": -24.026828706827526,
+                "Metrics": {
+                    "loss": 0.046255087331784045,
+                    "accuracy": 98.86363636363636,
+                    "time": 1.2811946868896484
+                },
+                "Environment": {
+                    "CPU Usage (%)": 4.1,
+                    "Available Memory (MB)": 383325.179904,
+                    "GPU Memory Allocated (MB)": 37.109248
+                }
+            },
+            {
+                "State": [
+                    36.0,
+                    76.33468627929688,
+                    1.0
+                ],
+                "Action": 0,
+                "Reward": -23.407473791657356,
+                "Metrics": {
+                    "loss": 0.012127444888888434,
+                    "accuracy": 99.7159090909091,
+                    "time": 1.0420348644256592
+                },
+                "Environment": {
+                    "CPU Usage (%)": 4.1,
+                    "Available Memory (MB)": 383325.437952,
+                    "GPU Memory Allocated (MB)": 37.10976
+                }
+            },
+            {
+                "State": [
+                    36.0,
+                    80.33468627929688,
+                    1.0
+                ],
+                "Action": 3,
+                "Reward": -24.28216361339966,
+                "Metrics": {
+                    "loss": 0.02999908481301232,
+                    "accuracy": 99.14772727272727,
+                    "time": 1.1257038116455078
+                },
+                "Environment": {
+                    "CPU Usage (%)": 4.1,
+                    "Available Memory (MB)": 383324.954624,
+                    "GPU Memory Allocated (MB)": 37.110272
+                }
+            },
+            {
+                "State": [
+                    36.0,
+                    80.33468627929688,
+                    2.0
+                ],
+                "Action": 4,
+                "Reward": -24.33771261202954,
+                "Metrics": {
+                    "loss": 0.013957174351989206,
+                    "accuracy": 99.43181818181819,
+                    "time": 1.2291514873504639
+                },
+                "Environment": {
+                    "CPU Usage (%)": 4.1,
+                    "Available Memory (MB)": 383322.33728,
+                    "GPU Memory Allocated (MB)": 37.110784
+                }
+            },
+            {
+                "State": [
+                    36.0,
+                    76.33468627929688,
+                    2.0
+                ],
+                "Action": 2,
+                "Reward": -23.556620676415996,
+                "Metrics": {
+                    "loss": 0.018660693283891305,
+                    "accuracy": 99.28977272727273,
+                    "time": 1.1531798839569092
+                },
+                "Environment": {
+                    "CPU Usage (%)": 4.1,
+                    "Available Memory (MB)": 383321.952256,
+                    "GPU Memory Allocated (MB)": 37.111296
+                }
+            },
+            {
+                "State": [
+                    35.0,
+                    76.33468627929688,
+                    2.0
+                ],
+                "Action": 0,
+                "Reward": -23.095874043249275,
+                "Metrics": {
+                    "loss": 0.02950496920807795,
+                    "accuracy": 99.00568181818181,
+                    "time": 1.2677984237670898
+                },
+                "Environment": {
+                    "CPU Usage (%)": 4.1,
+                    "Available Memory (MB)": 383321.911296,
+                    "GPU Memory Allocated (MB)": 37.111808
+                }
+            },
+            {
+                "State": [
+                    35.0,
+                    76.33468627929688,
+                    1.0
+                ],
+                "Action": 5,
+                "Reward": -22.972270196612754,
+                "Metrics": {
+                    "loss": 0.02010566802610728,
+                    "accuracy": 99.14772727272727,
+                    "time": 1.0789470672607422
+                },
+                "Environment": {
+                    "CPU Usage (%)": 4.0,
+                    "Available Memory (MB)": 383326.818304,
+                    "GPU Memory Allocated (MB)": 37.11232
+                }
+            },
+            {
+                "State": [
+                    35.0,
+                    72.33468627929688,
+                    1.0
+                ],
+                "Action": 2,
+                "Reward": -22.203851266569377,
+                "Metrics": {
+                    "loss": 0.023277647073634646,
+                    "accuracy": 98.86363636363636,
+                    "time": 0.989997148513794
+                },
+                "Environment": {
+                    "CPU Usage (%)": 4.1,
+                    "Available Memory (MB)": 383326.683136,
+                    "GPU Memory Allocated (MB)": 37.112832
+                }
+            },
+            {
+                "State": [
+                    35.0,
+                    72.33468627929688,
+                    1.0
+                ],
+                "Action": 5,
+                "Reward": -22.19324618770149,
+                "Metrics": {
+                    "loss": 0.026877113660289484,
+                    "accuracy": 99.00568181818181,
+                    "time": 1.1568949222564697
+                },
+                "Environment": {
+                    "CPU Usage (%)": 4.1,
+                    "Available Memory (MB)": 383326.425088,
+                    "GPU Memory Allocated (MB)": 37.113344
+                }
+            },
+            {
+                "State": [
+                    35.0,
+                    72.33468627929688,
+                    1.0
+                ],
+                "Action": 5,
+                "Reward": -22.140854497520593,
+                "Metrics": {
+                    "loss": 0.017099059843034906,
+                    "accuracy": 99.43181818181819,
+                    "time": 1.2515034675598145
+                },
+                "Environment": {
+                    "CPU Usage (%)": 4.0,
+                    "Available Memory (MB)": 383325.585408,
+                    "GPU Memory Allocated (MB)": 37.113856
+                }
+            },
+            {
+                "State": [
+                    35.0,
+                    72.33468627929688,
+                    1.0
+                ],
+                "Action": 5,
+                "Reward": -22.127383548082175,
+                "Metrics": {
+                    "loss": 0.01783265585915863,
+                    "accuracy": 99.57386363636364,
+                    "time": 1.1778934001922607
+                },
+                "Environment": {
+                    "CPU Usage (%)": 4.1,
+                    "Available Memory (MB)": 383326.052352,
+                    "GPU Memory Allocated (MB)": 37.114368
+                }
+            },
+            {
+                "State": [
+                    34.0,
+                    72.33468627929688,
+                    1.0
+                ],
+                "Action": 0,
+                "Reward": -21.690213527335708,
+                "Metrics": {
+                    "loss": 0.023844453294507482,
+                    "accuracy": 99.00568181818181,
+                    "time": 1.0406274795532227
+                },
+                "Environment": {
+                    "CPU Usage (%)": 4.0,
+                    "Available Memory (MB)": 383326.22848,
+                    "GPU Memory Allocated (MB)": 37.11488
+                }
+            }
+        ],
+        "Final State": [
+            34.0,
+            72.33468627929688,
+            1.0
+        ],
+        "Total Reward": -487.82570298427646,
+        "Final Metrics": {
+            "loss": 0.023844453294507482,
+            "accuracy": 99.00568181818181,
+            "time": 1.0406274795532227
+        }
+    },
+    {
+        "Episode": 98,
+        "Initial State": [
+            34.0,
+            72.33468627929688,
+            1.0
+        ],
+        "Steps": [
+            {
+                "State": [
+                    34.0,
+                    72.33468627929688,
+                    1.0
+                ],
+                "Action": 5,
+                "Reward": -21.643504295697632,
+                "Metrics": {
+                    "loss": 0.019748858020069416,
+                    "accuracy": 99.43181818181819,
+                    "time": 1.0284900665283203
+                },
+                "Environment": {
+                    "CPU Usage (%)": 4.0,
+                    "Available Memory (MB)": 383327.035392,
+                    "GPU Memory Allocated (MB)": 37.115904
+                }
+            },
+            {
+                "State": [
+                    35.0,
+                    72.33468627929688,
+                    1.0
+                ],
+                "Action": 1,
+                "Reward": -22.123710257065785,
+                "Metrics": {
+                    "loss": 0.014159364842767403,
+                    "accuracy": 99.57386363636364,
+                    "time": 1.0859293937683105
+                },
+                "Environment": {
+                    "CPU Usage (%)": 4.1,
+                    "Available Memory (MB)": 383325.958144,
+                    "GPU Memory Allocated (MB)": 37.116416
+                }
+            },
+            {
+                "State": [
+                    36.0,
+                    72.33468627929688,
+                    1.0
+                ],
+                "Action": 1,
+                "Reward": -22.621109898949303,
+                "Metrics": {
+                    "loss": 0.011559006726284597,
+                    "accuracy": 99.57386363636364,
+                    "time": 1.0226531028747559
+                },
+                "Environment": {
+                    "CPU Usage (%)": 4.0,
+                    "Available Memory (MB)": 383326.076928,
+                    "GPU Memory Allocated (MB)": 37.116928
+                }
+            },
+            {
+                "State": [
+                    35.0,
+                    72.33468627929688,
+                    1.0
+                ],
+                "Action": 0,
+                "Reward": -22.226685557658367,
+                "Metrics": {
+                    "loss": 0.03190739270807667,
+                    "accuracy": 98.7215909090909,
+                    "time": 1.2710812091827393
+                },
+                "Environment": {
+                    "CPU Usage (%)": 4.1,
+                    "Available Memory (MB)": 383326.179328,
+                    "GPU Memory Allocated (MB)": 37.11744
+                }
+            },
+            {
+                "State": [
+                    35.0,
+                    72.33468627929688,
+                    1.0
+                ],
+                "Action": 5,
+                "Reward": -22.250389716202733,
+                "Metrics": {
+                    "loss": 0.04140700579790229,
+                    "accuracy": 98.57954545454545,
+                    "time": 1.1590394973754883
+                },
+                "Environment": {
+                    "CPU Usage (%)": 4.1,
+                    "Available Memory (MB)": 383325.687808,
+                    "GPU Memory Allocated (MB)": 37.117952
+                }
+            },
+            {
+                "State": [
+                    35.0,
+                    76.33468627929688,
+                    1.0
+                ],
+                "Action": 3,
+                "Reward": -22.954949362057434,
+                "Metrics": {
+                    "loss": 0.016989378925328227,
+                    "accuracy": 99.28977272727273,
+                    "time": 1.1367881298065186
+                },
+                "Environment": {
+                    "CPU Usage (%)": 4.1,
+                    "Available Memory (MB)": 383325.67552,
+                    "GPU Memory Allocated (MB)": 37.118464
+                }
+            },
+            {
+                "State": [
+                    35.0,
+                    72.33468627929688,
+                    1.0
+                ],
+                "Action": 2,
+                "Reward": -22.20861083013376,
+                "Metrics": {
+                    "loss": 0.028037210638021035,
+                    "accuracy": 98.86363636363636,
+                    "time": 1.0318982601165771
+                },
+                "Environment": {
+                    "CPU Usage (%)": 4.0,
+                    "Available Memory (MB)": 383325.888512,
+                    "GPU Memory Allocated (MB)": 37.118976
+                }
+            },
+            {
+                "State": [
+                    35.0,
+                    72.33468627929688,
+                    1.0
+                ],
+                "Action": 5,
+                "Reward": -22.15657482849307,
+                "Metrics": {
+                    "loss": 0.018614845360967924,
+                    "accuracy": 99.28977272727273,
+                    "time": 1.0733203887939453
+                },
+                "Environment": {
+                    "CPU Usage (%)": 4.1,
+                    "Available Memory (MB)": 383326.134272,
+                    "GPU Memory Allocated (MB)": 37.119488
+                }
+            },
+            {
+                "State": [
+                    35.0,
+                    72.33468627929688,
+                    1.0
+                ],
+                "Action": 5,
+                "Reward": -22.140056764108756,
+                "Metrics": {
+                    "loss": 0.016301326431196438,
+                    "accuracy": 99.43181818181819,
+                    "time": 1.2305083274841309
+                },
+                "Environment": {
+                    "CPU Usage (%)": 4.1,
+                    "Available Memory (MB)": 383325.51168,
+                    "GPU Memory Allocated (MB)": 37.12
+                }
+            },
+            {
+                "State": [
+                    35.0,
+                    76.33468627929688,
+                    1.0
+                ],
+                "Action": 3,
+                "Reward": -23.06023030666931,
+                "Metrics": {
+                    "loss": 0.037043050809932705,
+                    "accuracy": 98.4375,
+                    "time": 1.0281217098236084
+                },
+                "Environment": {
+                    "CPU Usage (%)": 4.1,
+                    "Available Memory (MB)": 383326.081024,
+                    "GPU Memory Allocated (MB)": 37.120512
+                }
+            },
+            {
+                "State": [
+                    35.0,
+                    80.33468627929688,
+                    1.0
+                ],
+                "Action": 3,
+                "Reward": -23.84568839512596,
+                "Metrics": {
+                    "loss": 0.03670568472113122,
+                    "accuracy": 98.57954545454545,
+                    "time": 1.2195234298706055
+                },
+                "Environment": {
+                    "CPU Usage (%)": 4.2,
+                    "Available Memory (MB)": 383326.318592,
+                    "GPU Memory Allocated (MB)": 37.121024
+                }
+            },
+            {
+                "State": [
+                    35.0,
+                    80.33468627929688,
+                    1.0
+                ],
+                "Action": 5,
+                "Reward": -23.82600201569836,
+                "Metrics": {
+                    "loss": 0.03122385074807839,
+                    "accuracy": 98.7215909090909,
+                    "time": 1.143909215927124
+                },
+                "Environment": {
+                    "CPU Usage (%)": 4.2,
+                    "Available Memory (MB)": 383325.63456,
+                    "GPU Memory Allocated (MB)": 37.121536
+                }
+            },
+            {
+                "State": [
+                    35.0,
+                    80.33468627929688,
+                    1.0
+                ],
+                "Action": 5,
+                "Reward": -23.73763226799254,
+                "Metrics": {
+                    "loss": 0.02808137576953,
+                    "accuracy": 99.57386363636364,
+                    "time": 1.1251144409179688
+                },
+                "Environment": {
+                    "CPU Usage (%)": 4.1,
+                    "Available Memory (MB)": 383325.679616,
+                    "GPU Memory Allocated (MB)": 37.122048
+                }
+            },
+            {
+                "State": [
+                    35.0,
+                    76.33468627929688,
+                    1.0
+                ],
+                "Action": 2,
+                "Reward": -22.93080412281296,
+                "Metrics": {
+                    "loss": 0.021253230589949948,
+                    "accuracy": 99.57386363636364,
+                    "time": 1.1670429706573486
+                },
+                "Environment": {
+                    "CPU Usage (%)": 4.0,
+                    "Available Memory (MB)": 383325.048832,
+                    "GPU Memory Allocated (MB)": 37.12256
+                }
+            },
+            {
+                "State": [
+                    36.0,
+                    76.33468627929688,
+                    1.0
+                ],
+                "Action": 1,
+                "Reward": -23.520271882872013,
+                "Metrics": {
+                    "loss": 0.02549371792172844,
+                    "accuracy": 98.7215909090909,
+                    "time": 1.1570284366607666
+                },
+                "Environment": {
+                    "CPU Usage (%)": 4.1,
+                    "Available Memory (MB)": 383325.691904,
+                    "GPU Memory Allocated (MB)": 37.123072
+                }
+            },
+            {
+                "State": [
+                    36.0,
+                    72.33468627929688,
+                    1.0
+                ],
+                "Action": 2,
+                "Reward": -22.693022833561365,
+                "Metrics": {
+                    "loss": 0.026653759520162235,
+                    "accuracy": 99.00568181818181,
+                    "time": 1.1247522830963135
+                },
+                "Environment": {
+                    "CPU Usage (%)": 4.1,
+                    "Available Memory (MB)": 383325.298688,
+                    "GPU Memory Allocated (MB)": 37.123584
+                }
+            },
+            {
+                "State": [
+                    36.0,
+                    68.33468627929688,
+                    1.0
+                ],
+                "Action": 2,
+                "Reward": -21.87533646476963,
+                "Metrics": {
+                    "loss": 0.023171936182982543,
+                    "accuracy": 99.14772727272727,
+                    "time": 1.270157814025879
+                },
+                "Environment": {
+                    "CPU Usage (%)": 4.1,
+                    "Available Memory (MB)": 383325.847552,
+                    "GPU Memory Allocated (MB)": 37.124096
+                }
+            },
+            {
+                "State": [
+                    36.0,
+                    68.33468627929688,
+                    1.0
+                ],
+                "Action": 5,
+                "Reward": -21.896273792361505,
+                "Metrics": {
+                    "loss": 0.029904718320308762,
+                    "accuracy": 99.00568181818181,
+                    "time": 1.1095402240753174
+                },
+                "Environment": {
+                    "CPU Usage (%)": 4.1,
+                    "Available Memory (MB)": 383324.934144,
+                    "GPU Memory Allocated (MB)": 37.124608
+                }
+            },
+            {
+                "State": [
+                    36.0,
+                    68.33468627929688,
+                    1.0
+                ],
+                "Action": 5,
+                "Reward": -21.907877635803413,
+                "Metrics": {
+                    "loss": 0.02730401630767367,
+                    "accuracy": 98.86363636363636,
+                    "time": 1.3031888008117676
+                },
+                "Environment": {
+                    "CPU Usage (%)": 4.1,
+                    "Available Memory (MB)": 383324.176384,
+                    "GPU Memory Allocated (MB)": 37.12512
+                }
+            },
+            {
+                "State": [
+                    36.0,
+                    72.33468627929688,
+                    1.0
+                ],
+                "Action": 3,
+                "Reward": -22.65660078471781,
+                "Metrics": {
+                    "loss": 0.018640801585702735,
+                    "accuracy": 99.28977272727273,
+                    "time": 1.0691139698028564
+                },
+                "Environment": {
+                    "CPU Usage (%)": 4.0,
+                    "Available Memory (MB)": 383324.93824,
+                    "GPU Memory Allocated (MB)": 37.125632
+                }
+            }
+        ],
+        "Final State": [
+            36.0,
+            72.33468627929688,
+            1.0
+        ],
+        "Total Reward": -452.2753320127517,
+        "Final Metrics": {
+            "loss": 0.018640801585702735,
+            "accuracy": 99.28977272727273,
+            "time": 1.0691139698028564
+        }
+    },
+    {
+        "Episode": 99,
+        "Initial State": [
+            36.0,
+            72.33468627929688,
+            1.0
+        ],
+        "Steps": [
+            {
+                "State": [
+                    36.0,
+                    76.33468627929688,
+                    1.0
+                ],
+                "Action": 3,
+                "Reward": -23.499279917569154,
+                "Metrics": {
+                    "loss": 0.032910843527960504,
+                    "accuracy": 99.00568181818181,
+                    "time": 1.3129839897155762
+                },
+                "Environment": {
+                    "CPU Usage (%)": 4.1,
+                    "Available Memory (MB)": 383324.966912,
+                    "GPU Memory Allocated (MB)": 37.126656
+                }
+            },
+            {
+                "State": [
+                    37.0,
+                    76.33468627929688,
+                    1.0
+                ],
+                "Action": 1,
+                "Reward": -23.91215282976204,
+                "Metrics": {
+                    "loss": 0.016806482993574304,
+                    "accuracy": 99.7159090909091,
+                    "time": 1.0188355445861816
+                },
+                "Environment": {
+                    "CPU Usage (%)": 4.0,
+                    "Available Memory (MB)": 383323.77088,
+                    "GPU Memory Allocated (MB)": 37.127168
+                }
+            },
+            {
+                "State": [
+                    37.0,
+                    76.33468627929688,
+                    1.0
+                ],
+                "Action": 5,
+                "Reward": -23.955628965708257,
+                "Metrics": {
+                    "loss": 0.017668982576155526,
+                    "accuracy": 99.28977272727273,
+                    "time": 1.1262619495391846
+                },
+                "Environment": {
+                    "CPU Usage (%)": 4.2,
+                    "Available Memory (MB)": 383323.070464,
+                    "GPU Memory Allocated (MB)": 37.12768
+                }
+            },
+            {
+                "State": [
+                    37.0,
+                    76.33468627929688,
+                    1.0
+                ],
+                "Action": 5,
+                "Reward": -23.942114275469528,
+                "Metrics": {
+                    "loss": 0.01835883779197254,
+                    "accuracy": 99.43181818181819,
+                    "time": 1.0016453266143799
+                },
+                "Environment": {
+                    "CPU Usage (%)": 4.0,
+                    "Available Memory (MB)": 383323.15648,
+                    "GPU Memory Allocated (MB)": 37.128192
+                }
+            },
+            {
+                "State": [
+                    37.0,
+                    76.33468627929688,
+                    1.0
+                ],
+                "Action": 5,
+                "Reward": -23.98832289385821,
+                "Metrics": {
+                    "loss": 0.02195381981701675,
+                    "accuracy": 99.00568181818181,
+                    "time": 1.0640723705291748
+                },
+                "Environment": {
+                    "CPU Usage (%)": 4.1,
+                    "Available Memory (MB)": 383323.041792,
+                    "GPU Memory Allocated (MB)": 37.128704
+                }
+            },
+            {
+                "State": [
+                    37.0,
+                    72.33468627929688,
+                    1.0
+                ],
+                "Action": 2,
+                "Reward": -23.218465172321626,
+                "Metrics": {
+                    "loss": 0.02368700737133622,
+                    "accuracy": 98.7215909090909,
+                    "time": 1.1710083484649658
+                },
+                "Environment": {
+                    "CPU Usage (%)": 4.1,
+                    "Available Memory (MB)": 383323.590656,
+                    "GPU Memory Allocated (MB)": 37.129216
+                }
+            },
+            {
+                "State": [
+                    37.0,
+                    72.33468627929688,
+                    1.0
+                ],
+                "Action": 5,
+                "Reward": -23.141638055079703,
+                "Metrics": {
+                    "loss": 0.017882617402144453,
+                    "accuracy": 99.43181818181819,
+                    "time": 1.0287225246429443
+                },
+                "Environment": {
+                    "CPU Usage (%)": 4.1,
+                    "Available Memory (MB)": 383323.652096,
+                    "GPU Memory Allocated (MB)": 37.129728
+                }
+            },
+            {
+                "State": [
+                    37.0,
+                    72.33468627929688,
+                    1.0
+                ],
+                "Action": 5,
+                "Reward": -23.17546152615158,
+                "Metrics": {
+                    "loss": 0.023296997564929454,
+                    "accuracy": 99.14772727272727,
+                    "time": 1.1368505954742432
+                },
+                "Environment": {
+                    "CPU Usage (%)": 4.1,
+                    "Available Memory (MB)": 383323.615232,
+                    "GPU Memory Allocated (MB)": 37.13024
+                }
+            },
+            {
+                "State": [
+                    36.0,
+                    72.33468627929688,
+                    1.0
+                ],
+                "Action": 0,
+                "Reward": -22.661357027712405,
+                "Metrics": {
+                    "loss": 0.023397044580302794,
+                    "accuracy": 99.28977272727273,
+                    "time": 1.2264673709869385
+                },
+                "Environment": {
+                    "CPU Usage (%)": 5.4,
+                    "Available Memory (MB)": 383301.722112,
+                    "GPU Memory Allocated (MB)": 37.130752
+                }
+            },
+            {
+                "State": [
+                    37.0,
+                    72.33468627929688,
+                    1.0
+                ],
+                "Action": 1,
+                "Reward": -23.13410957930822,
+                "Metrics": {
+                    "loss": 0.024558687085201116,
+                    "accuracy": 99.57386363636364,
+                    "time": 1.1272521018981934
+                },
+                "Environment": {
+                    "CPU Usage (%)": 3.6,
+                    "Available Memory (MB)": 383317.106688,
+                    "GPU Memory Allocated (MB)": 37.131264
+                }
+            },
+            {
+                "State": [
+                    37.0,
+                    72.33468627929688,
+                    1.0
+                ],
+                "Action": 5,
+                "Reward": -23.161145606145418,
+                "Metrics": {
+                    "loss": 0.02318562301330861,
+                    "accuracy": 99.28977272727273,
+                    "time": 1.106327772140503
+                },
+                "Environment": {
+                    "CPU Usage (%)": 3.4,
+                    "Available Memory (MB)": 383317.839872,
+                    "GPU Memory Allocated (MB)": 37.131776
+                }
+            },
+            {
+                "State": [
+                    36.0,
+                    72.33468627929688,
+                    1.0
+                ],
+                "Action": 0,
+                "Reward": -22.666052919892934,
+                "Metrics": {
+                    "loss": 0.02809293676083061,
+                    "accuracy": 99.28977272727273,
+                    "time": 1.2279269695281982
+                },
+                "Environment": {
+                    "CPU Usage (%)": 4.0,
+                    "Available Memory (MB)": 383317.66784,
+                    "GPU Memory Allocated (MB)": 37.132288
+                }
+            },
+            {
+                "State": [
+                    36.0,
+                    72.33468627929688,
+                    2.0
+                ],
+                "Action": 4,
+                "Reward": -22.726765709469337,
+                "Metrics": {
+                    "loss": 0.01721481724631634,
+                    "accuracy": 99.57386363636364,
+                    "time": 1.283553123474121
+                },
+                "Environment": {
+                    "CPU Usage (%)": 4.0,
+                    "Available Memory (MB)": 383317.64736,
+                    "GPU Memory Allocated (MB)": 37.1328
+                }
+            },
+            {
+                "State": [
+                    35.0,
+                    72.33468627929688,
+                    2.0
+                ],
+                "Action": 0,
+                "Reward": -22.23012143205005,
+                "Metrics": {
+                    "loss": 0.02057053982703523,
+                    "accuracy": 99.57386363636364,
+                    "time": 1.0576848983764648
+                },
+                "Environment": {
+                    "CPU Usage (%)": 4.1,
+                    "Available Memory (MB)": 383317.27872,
+                    "GPU Memory Allocated (MB)": 37.133312
+                }
+            },
+            {
+                "State": [
+                    35.0,
+                    72.33468627929688,
+                    1.0
+                ],
+                "Action": 5,
+                "Reward": -22.13354059031064,
+                "Metrics": {
+                    "loss": 0.02398969808762724,
+                    "accuracy": 99.57386363636364,
+                    "time": 1.2253961563110352
+                },
+                "Environment": {
+                    "CPU Usage (%)": 3.6,
+                    "Available Memory (MB)": 383320.932352,
+                    "GPU Memory Allocated (MB)": 37.133824
+                }
+            },
+            {
+                "State": [
+                    35.0,
+                    72.33468627929688,
+                    1.0
+                ],
+                "Action": 5,
+                "Reward": -22.17153459540357,
+                "Metrics": {
+                    "loss": 0.019370066816918552,
+                    "accuracy": 99.14772727272727,
+                    "time": 1.0300514698028564
+                },
+                "Environment": {
+                    "CPU Usage (%)": 3.8,
+                    "Available Memory (MB)": 383320.8832,
+                    "GPU Memory Allocated (MB)": 37.134336
+                }
+            },
+            {
+                "State": [
+                    35.0,
+                    72.33468627929688,
+                    2.0
+                ],
+                "Action": 4,
+                "Reward": -22.256115540214395,
+                "Metrics": {
+                    "loss": 0.018155557082288644,
+                    "accuracy": 99.28977272727273,
+                    "time": 1.1433711051940918
+                },
+                "Environment": {
+                    "CPU Usage (%)": 4.1,
+                    "Available Memory (MB)": 383320.82176,
+                    "GPU Memory Allocated (MB)": 37.134848
+                }
+            },
+            {
+                "State": [
+                    35.0,
+                    72.33468627929688,
+                    1.0
+                ],
+                "Action": 5,
+                "Reward": -22.157653264824134,
+                "Metrics": {
+                    "loss": 0.0196932816920294,
+                    "accuracy": 99.28977272727273,
+                    "time": 1.1940538883209229
+                },
+                "Environment": {
+                    "CPU Usage (%)": 4.1,
+                    "Available Memory (MB)": 383324.684288,
+                    "GPU Memory Allocated (MB)": 37.13536
+                }
+            },
+            {
+                "State": [
+                    35.0,
+                    72.33468627929688,
+                    1.0
+                ],
+                "Action": 5,
+                "Reward": -22.238455852373,
+                "Metrics": {
+                    "loss": 0.029473141968165608,
+                    "accuracy": 98.57954545454545,
+                    "time": 1.2448594570159912
+                },
+                "Environment": {
+                    "CPU Usage (%)": 4.1,
+                    "Available Memory (MB)": 383324.50816,
+                    "GPU Memory Allocated (MB)": 37.135872
+                }
+            },
+            {
+                "State": [
+                    35.0,
+                    72.33468627929688,
+                    1.0
+                ],
+                "Action": 5,
+                "Reward": -22.217415875772186,
+                "Metrics": {
+                    "loss": 0.036842256276444954,
+                    "accuracy": 98.86363636363636,
+                    "time": 1.2812588214874268
+                },
+                "Environment": {
+                    "CPU Usage (%)": 4.0,
+                    "Available Memory (MB)": 383325.356032,
+                    "GPU Memory Allocated (MB)": 37.136384
+                }
+            }
+        ],
+        "Final State": [
+            35.0,
+            72.33468627929688,
+            1.0
+        ],
+        "Total Reward": -458.58733162939643,
+        "Final Metrics": {
+            "loss": 0.036842256276444954,
+            "accuracy": 98.86363636363636,
+            "time": 1.2812588214874268
+        }
+    },
+    {
+        "Episode": 100,
+        "Initial State": [
+            35.0,
+            72.33468627929688,
+            1.0
+        ],
+        "Steps": [
+            {
+                "State": [
+                    35.0,
+                    72.33468627929688,
+                    2.0
+                ],
+                "Action": 4,
+                "Reward": -22.325982010169806,
+                "Metrics": {
+                    "loss": 0.031203845219517298,
+                    "accuracy": 98.7215909090909,
+                    "time": 1.030099630355835
+                },
+                "Environment": {
+                    "CPU Usage (%)": 3.7,
+                    "Available Memory (MB)": 383326.560256,
+                    "GPU Memory Allocated (MB)": 37.137408
+                }
+            },
+            {
+                "State": [
+                    35.0,
+                    72.33468627929688,
+                    1.0
+                ],
+                "Action": 5,
+                "Reward": -22.124517943732318,
+                "Metrics": {
+                    "loss": 0.01496705150930211,
+                    "accuracy": 99.57386363636364,
+                    "time": 0.9819138050079346
+                },
+                "Environment": {
+                    "CPU Usage (%)": 4.1,
+                    "Available Memory (MB)": 383326.285824,
+                    "GPU Memory Allocated (MB)": 37.13792
+                }
+            },
+            {
+                "State": [
+                    34.0,
+                    72.33468627929688,
+                    1.0
+                ],
+                "Action": 0,
+                "Reward": -21.604714948928454,
+                "Metrics": {
+                    "loss": 0.009368602159983393,
+                    "accuracy": 99.7159090909091,
+                    "time": 1.254763126373291
+                },
+                "Environment": {
+                    "CPU Usage (%)": 4.1,
+                    "Available Memory (MB)": 383325.884416,
+                    "GPU Memory Allocated (MB)": 37.138432
+                }
+            },
+            {
+                "State": [
+                    34.0,
+                    72.33468627929688,
+                    2.0
+                ],
+                "Action": 4,
+                "Reward": -21.67196903766493,
+                "Metrics": {
+                    "loss": 0.005031781805552204,
+                    "accuracy": 100.0,
+                    "time": 1.25588059425354
+                },
+                "Environment": {
+                    "CPU Usage (%)": 4.1,
+                    "Available Memory (MB)": 383325.679616,
+                    "GPU Memory Allocated (MB)": 37.138944
+                }
+            },
+            {
+                "State": [
+                    34.0,
+                    72.33468627929688,
+                    1.0
+                ],
+                "Action": 5,
+                "Reward": -21.651782345207707,
+                "Metrics": {
+                    "loss": 0.013822362075602128,
+                    "accuracy": 99.28977272727273,
+                    "time": 1.005211591720581
+                },
+                "Environment": {
+                    "CPU Usage (%)": 4.1,
+                    "Available Memory (MB)": 383325.483008,
+                    "GPU Memory Allocated (MB)": 37.139456
+                }
+            },
+            {
+                "State": [
+                    33.0,
+                    72.33468627929688,
+                    1.0
+                ],
+                "Action": 0,
+                "Reward": -21.12701467693022,
+                "Metrics": {
+                    "loss": 0.017463784707202154,
+                    "accuracy": 99.57386363636364,
+                    "time": 1.3044934272766113
+                },
+                "Environment": {
+                    "CPU Usage (%)": 4.1,
+                    "Available Memory (MB)": 383325.581312,
+                    "GPU Memory Allocated (MB)": 37.139968
+                }
+            },
+            {
+                "State": [
+                    33.0,
+                    72.33468627929688,
+                    1.0
+                ],
+                "Action": 5,
+                "Reward": -21.139940618247394,
+                "Metrics": {
+                    "loss": 0.01618518056982959,
+                    "accuracy": 99.43181818181819,
+                    "time": 1.2424137592315674
+                },
+                "Environment": {
+                    "CPU Usage (%)": 4.1,
+                    "Available Memory (MB)": 383325.855744,
+                    "GPU Memory Allocated (MB)": 37.14048
+                }
+            },
+            {
+                "State": [
+                    34.0,
+                    72.33468627929688,
+                    1.0
+                ],
+                "Action": 1,
+                "Reward": -21.668885079938498,
+                "Metrics": {
+                    "loss": 0.03092509680639275,
+                    "accuracy": 99.28977272727273,
+                    "time": 1.0770573616027832
+                },
+                "Environment": {
+                    "CPU Usage (%)": 4.1,
+                    "Available Memory (MB)": 383323.516928,
+                    "GPU Memory Allocated (MB)": 37.140992
+                }
+            },
+            {
+                "State": [
+                    33.0,
+                    72.33468627929688,
+                    1.0
+                ],
+                "Action": 0,
+                "Reward": -21.172609335124836,
+                "Metrics": {
+                    "loss": 0.02044480653818358,
+                    "accuracy": 99.14772727272727,
+                    "time": 1.2486059665679932
+                },
+                "Environment": {
+                    "CPU Usage (%)": 4.1,
+                    "Available Memory (MB)": 383324.03712,
+                    "GPU Memory Allocated (MB)": 37.141504
+                }
+            },
+            {
+                "State": [
+                    32.0,
+                    72.33468627929688,
+                    1.0
+                ],
+                "Action": 0,
+                "Reward": -20.723472708339852,
+                "Metrics": {
+                    "loss": 0.028694543389561164,
+                    "accuracy": 98.7215909090909,
+                    "time": 1.1937415599822998
+                },
+                "Environment": {
+                    "CPU Usage (%)": 4.1,
+                    "Available Memory (MB)": 383323.414528,
+                    "GPU Memory Allocated (MB)": 37.142016
+                }
+            },
+            {
+                "State": [
+                    31.0,
+                    72.33468627929688,
+                    1.0
+                ],
+                "Action": 0,
+                "Reward": -20.23538688760336,
+                "Metrics": {
+                    "loss": 0.04060872265307063,
+                    "accuracy": 98.7215909090909,
+                    "time": 1.1898107528686523
+                },
+                "Environment": {
+                    "CPU Usage (%)": 4.1,
+                    "Available Memory (MB)": 383324.168192,
+                    "GPU Memory Allocated (MB)": 37.142528
+                }
+            },
+            {
+                "State": [
+                    30.0,
+                    72.33468627929688,
+                    1.0
+                ],
+                "Action": 0,
+                "Reward": -19.639129445629877,
+                "Metrics": {
+                    "loss": 0.015374007952314887,
+                    "accuracy": 99.43181818181819,
+                    "time": 1.0964758396148682
+                },
+                "Environment": {
+                    "CPU Usage (%)": 4.1,
+                    "Available Memory (MB)": 383324.28288,
+                    "GPU Memory Allocated (MB)": 37.14304
+                }
+            },
+            {
+                "State": [
+                    30.0,
+                    72.33468627929688,
+                    2.0
+                ],
+                "Action": 4,
+                "Reward": -19.77297329795547,
+                "Metrics": {
+                    "loss": 0.035013314823366025,
+                    "accuracy": 99.28977272727273,
+                    "time": 1.1392383575439453
+                },
+                "Environment": {
+                    "CPU Usage (%)": 4.1,
+                    "Available Memory (MB)": 383324.430336,
+                    "GPU Memory Allocated (MB)": 37.143552
+                }
+            },
+            {
+                "State": [
+                    30.0,
+                    72.33468627929688,
+                    1.0
+                ],
+                "Action": 5,
+                "Reward": -19.76413451795128,
+                "Metrics": {
+                    "loss": 0.04094726209190081,
+                    "accuracy": 98.4375,
+                    "time": 1.1119084358215332
+                },
+                "Environment": {
+                    "CPU Usage (%)": 4.1,
+                    "Available Memory (MB)": 383324.450816,
+                    "GPU Memory Allocated (MB)": 37.144064
+                }
+            },
+            {
+                "State": [
+                    29.0,
+                    72.33468627929688,
+                    1.0
+                ],
+                "Action": 0,
+                "Reward": -19.192723159811635,
+                "Metrics": {
+                    "loss": 0.02635408577043563,
+                    "accuracy": 99.00568181818181,
+                    "time": 1.0592403411865234
+                },
+                "Environment": {
+                    "CPU Usage (%)": 4.1,
+                    "Available Memory (MB)": 383324.889088,
+                    "GPU Memory Allocated (MB)": 37.144576
+                }
+            },
+            {
+                "State": [
+                    29.0,
+                    68.33468627929688,
+                    1.0
+                ],
+                "Action": 2,
+                "Reward": -18.425230372781783,
+                "Metrics": {
+                    "loss": 0.030452207831496544,
+                    "accuracy": 98.7215909090909,
+                    "time": 1.268629550933838
+                },
+                "Environment": {
+                    "CPU Usage (%)": 4.1,
+                    "Available Memory (MB)": 383324.545024,
+                    "GPU Memory Allocated (MB)": 37.145088
+                }
+            },
+            {
+                "State": [
+                    28.0,
+                    68.33468627929688,
+                    1.0
+                ],
+                "Action": 0,
+                "Reward": -17.911852657742035,
+                "Metrics": {
+                    "loss": 0.0312790382462977,
+                    "accuracy": 98.86363636363636,
+                    "time": 1.2481083869934082
+                },
+                "Environment": {
+                    "CPU Usage (%)": 4.1,
+                    "Available Memory (MB)": 383324.266496,
+                    "GPU Memory Allocated (MB)": 37.1456
+                }
+            },
+            {
+                "State": [
+                    28.0,
+                    72.33468627929688,
+                    1.0
+                ],
+                "Action": 3,
+                "Reward": -18.676638765986592,
+                "Metrics": {
+                    "loss": 0.024474237399937756,
+                    "accuracy": 99.14772727272727,
+                    "time": 1.2243452072143555
+                },
+                "Environment": {
+                    "CPU Usage (%)": 4.1,
+                    "Available Memory (MB)": 383324.766208,
+                    "GPU Memory Allocated (MB)": 37.146112
+                }
+            },
+            {
+                "State": [
+                    28.0,
+                    72.33468627929688,
+                    2.0
+                ],
+                "Action": 4,
+                "Reward": -18.75284226447799,
+                "Metrics": {
+                    "loss": 0.014882281345886771,
+                    "accuracy": 99.28977272727273,
+                    "time": 1.0362343788146973
+                },
+                "Environment": {
+                    "CPU Usage (%)": 4.1,
+                    "Available Memory (MB)": 383323.930624,
+                    "GPU Memory Allocated (MB)": 37.146624
+                }
+            },
+            {
+                "State": [
+                    27.0,
+                    72.33468627929688,
+                    2.0
+                ],
+                "Action": 0,
+                "Reward": -18.243837452306288,
+                "Metrics": {
+                    "loss": 0.020082014628728342,
+                    "accuracy": 99.43181818181819,
+                    "time": 1.3162174224853516
+                },
+                "Environment": {
+                    "CPU Usage (%)": 4.1,
+                    "Available Memory (MB)": 383324.069888,
+                    "GPU Memory Allocated (MB)": 37.147136
+                }
+            }
+        ],
+        "Final State": [
+            27.0,
+            72.33468627929688,
+            2.0
+        ],
+        "Total Reward": -405.8256375265303,
+        "Final Metrics": {
+            "loss": 0.020082014628728342,
+            "accuracy": 99.43181818181819,
+            "time": 1.3162174224853516
+        }
