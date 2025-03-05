@@ -1,3 +1,8 @@
+########################################
+######## SERAJ A MOSTAFA ###############
+### PhD Candiate, IS Dept. UMBC ########
+########################################
+
 import torch
 import torch.nn as nn
 import torch.optim as optim
