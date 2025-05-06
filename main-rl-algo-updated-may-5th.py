@@ -1,11 +1,11 @@
-#!/usr/bin/env python3
-# Cloud Resource Optimizer with Reinforcement Learning
-# This script optimizes cloud resources for ML training workloads
-
 #################################################################
 ########################## SERAJ MOSTAFA ########################
 ######################## Dept. of IS, UMBC ######################
 #################################################################
+
+#!/usr/bin/env python3
+# Cloud Resource Optimizer with Reinforcement Learning
+# This script optimizes cloud resources for ML training workloads
 
 import os
 import sys
@@ -3160,6 +3160,7 @@ class CloudResourceOptimizer:
 			del os.environ['OPTIMIZER_EPOCHS']
 		logger.info("Running optimized training with full epochs")
 
+		
 		# --- Run the optimized training ---
 		if not self.training_manager.run_training(
 				gpu_count=test_option['gpu_count'],
@@ -3180,8 +3181,11 @@ class CloudResourceOptimizer:
 				optimized_summary = self.training_manager.generate_summary()
 				logger.info(f"Optimized summary: {optimized_summary}")
 				
-				# Add RL processing for optimized phase
-				if optimized_metrics is not None:
+				# Reset epoch numbering for optimized phase while preserving action timing
+				if optimized_metrics is not None and 'epoch' in optimized_metrics.columns:
+					# Clear any existing metrics before processing optimized phase
+					self.metrics_tracker = RLMetricsTracker()  # Create fresh tracker for optimized phase
+					
 					# Reset environment for optimized phase
 					self.cloud_env.reset()
 					previous_state_vector = None
@@ -3189,53 +3193,238 @@ class CloudResourceOptimizer:
 					# Process each epoch of optimized metrics
 					for i, row in optimized_metrics.iterrows():
 						try:
-							epoch = int(float(row['epoch']))
-						except (ValueError, TypeError):
-							continue  # Skip any invalid rows
+							# Use row index as epoch instead of the original epoch value
+							epoch = i  # This ensures epochs start from 0 and increment by 1
 							
-						# Update environment with optimized metrics
-						state = self.cloud_env.update_metrics(row.to_dict())
+							# Create a modified row with the new epoch
+							new_row = row.copy()
+							new_row['epoch'] = epoch
+							
+							# Update environment with optimized metrics
+							state = self.cloud_env.update_metrics(new_row.to_dict())
+							
+							# Track performance with modified epoch
+							self.metrics_tracker.add_performance_metrics({
+								'epoch': epoch,
+								'throughput': row.get('throughput', 0),
+								'time_so_far': row.get('time_so_far', 0),
+								'cost_so_far': row.get('cost_so_far', 0),
+								'gpu_util': self.cloud_env.state.state_components['gpu_util'],
+								'cpu_util': self.cloud_env.state.state_components['cpu_util'],
+								'memory_util': self.cloud_env.state.state_components['memory_util']
+							})
+							
+							# Get current state vector
+							current_state_vector = self.cloud_env.state.get_vector()
+							
+							# Log basic metrics
+							logger.info(f"[OPTIMIZED - epoch {epoch}] Metrics stored, SLA met: {self.cloud_env.state.get_overall_sla_compliance()}")
+							
+							# Detect if significant change occurred
+							if previous_state_vector is None or self._detect_significant_change(current_state_vector, previous_state_vector):
+								previous_state_vector = current_state_vector.copy()
+								
+								# Select action based on learned policy
+								action_idx, action_one_hot, _ = self.agent.select_action(state, explore=False)
+								
+								# Calculate reward and update state
+								next_state, reward, done, info = self.cloud_env.step(action_idx)
+								
+								# Get adjustment details
+								adjustment_metrics = self.cloud_env.log_adjustment_details(
+									action_idx,
+									info.get('prev_allocation', {}),
+									self.cloud_env.current_allocation,
+									reward
+								)
+								
+								# Force the epoch number in adjustment metrics
+								adjustment_metrics['epoch'] = epoch
+								
+								# Save metrics for reporting
+								self.metrics_tracker.add_adjustment_metrics(adjustment_metrics)
+								
+								# Log detailed RL adjustment summary
+								logger.info(f"\n========== OPTIMIZED RL Adjustment — Epoch {epoch} ==========")
+								logger.info(f"🎯 Action Taken       : {adjustment_metrics['action_description']}")
+								logger.info(f"🧠 Selected by Agent  : Action #{adjustment_metrics['action']} → {adjustment_metrics['action_description']}")
+								logger.info(f"🔧 Resource Allocation: GPUs {info.get('prev_allocation', {}).get('gpu_count', 0)} → {adjustment_metrics['gpu_count']}, "
+										  f"CPUs {info.get('prev_allocation', {}).get('cpu_count', 0)} → {adjustment_metrics['cpu_count']}, "
+										  f"Memory {info.get('prev_allocation', {}).get('memory_gb', 0):.1f}GB → {adjustment_metrics['memory_gb']:.1f}GB")
+								logger.info(f"💰 Reward: {reward:.2f} | Cost: {adjustment_metrics['reward_cost']:.2f} | SLA: {adjustment_metrics['reward_sla']:.2f}")
+								logger.info("==========================================================\n")
+							else:
+								# Just update the state vector for comparison
+								previous_state_vector = current_state_vector.copy()
+								logger.info(f"[OPTIMIZED - epoch {epoch}] No action taken - no significant change detected")
+								
+						except (ValueError, TypeError) as e:
+							logger.error(f"Error processing row {i}: {e}")
+							continue  # Skip any problematic rows
+
+		# # --- Run the optimized training ---
+		# if not self.training_manager.run_training(
+		# 		gpu_count=test_option['gpu_count'],
+		# 		cpu_count=test_option['cpu_count'],
+		# 		batch_size=optimized_batch_size
+		# ):
+		# 	logger.error("Optimized training failed")
+		# 	optimized_metrics = None
+		# 	optimized_summary = None
+		# else:
+		# 	optimized_csv_path = self.training_manager.output_csv_path
+		# 	if not optimized_csv_path:
+		# 		logger.error("No optimized CSV found")
+		# 		optimized_metrics = None
+		# 		optimized_summary = None
+		# 	else:
+		# 		optimized_metrics = pd.read_csv(optimized_csv_path)
+		# 		optimized_summary = self.training_manager.generate_summary()
+		# 		logger.info(f"Optimized summary: {optimized_summary}")
+				
+		# 		# Reset epoch numbering for optimized phase while preserving action timing
+		# 		if optimized_metrics is not None and 'epoch' in optimized_metrics.columns:
+		# 			# Store the epoch offset (minimum epoch value)
+		# 			epoch_offset = optimized_metrics['epoch'].min()
+					
+		# 			# Adjust epochs to start from 0
+		# 			optimized_metrics['epoch'] = optimized_metrics['epoch'] - epoch_offset
+					
+		# 			# Log the adjustment for debugging
+		# 			logger.info(f"Adjusted optimized phase epochs by offset {epoch_offset} to start from 0")
+				
+		# 		# Add RL processing for optimized phase
+		# 		if optimized_metrics is not None:
+		# 			# Reset environment for optimized phase
+		# 			self.cloud_env.reset()
+		# 			previous_state_vector = None
+					
+		# 			# Process each epoch of optimized metrics
+		# 			for i, row in optimized_metrics.iterrows():
+		# 				try:
+		# 					epoch = int(float(row['epoch']))
+		# 				except (ValueError, TypeError):
+		# 					continue  # Skip any invalid rows
+							
+		# 				# Update environment with optimized metrics
+		# 				state = self.cloud_env.update_metrics(row.to_dict())
 						
-						# Get current state vector
-						current_state_vector = self.cloud_env.state.get_vector()
+		# 				# Get current state vector
+		# 				current_state_vector = self.cloud_env.state.get_vector()
 						
-						# Log basic metrics
-						logger.info(f"[OPTIMIZED - epoch {epoch}] Metrics stored, SLA met: {self.cloud_env.state.get_overall_sla_compliance()}")
+		# 				# Log basic metrics
+		# 				logger.info(f"[OPTIMIZED - epoch {epoch}] Metrics stored, SLA met: {self.cloud_env.state.get_overall_sla_compliance()}")
 						
-						# Detect if significant change occurred
-						if previous_state_vector is None or self._detect_significant_change(current_state_vector, previous_state_vector):
-							previous_state_vector = current_state_vector.copy()
+		# 				# Detect if significant change occurred
+		# 				if previous_state_vector is None or self._detect_significant_change(current_state_vector, previous_state_vector):
+		# 					previous_state_vector = current_state_vector.copy()
 							
-							# Select action based on learned policy
-							action_idx, action_one_hot, _ = self.agent.select_action(state, explore=False)
+		# 					# Select action based on learned policy
+		# 					action_idx, action_one_hot, _ = self.agent.select_action(state, explore=False)
 							
-							# Calculate reward and update state
-							next_state, reward, done, info = self.cloud_env.step(action_idx)
+		# 					# Calculate reward and update state
+		# 					next_state, reward, done, info = self.cloud_env.step(action_idx)
 							
-							# Get adjustment details
-							adjustment_metrics = self.cloud_env.log_adjustment_details(
-								action_idx,
-								info.get('prev_allocation', {}),
-								self.cloud_env.current_allocation,
-								reward
-							)
+		# 					# Get adjustment details
+		# 					adjustment_metrics = self.cloud_env.log_adjustment_details(
+		# 						action_idx,
+		# 						info.get('prev_allocation', {}),
+		# 						self.cloud_env.current_allocation,
+		# 						reward
+		# 					)
 							
-							# Save metrics for reporting
-							self.metrics_tracker.add_adjustment_metrics(adjustment_metrics)
+		# 					# Save metrics for reporting
+		# 					self.metrics_tracker.add_adjustment_metrics(adjustment_metrics)
 							
-							# Log detailed RL adjustment summary
-							logger.info(f"\n========== OPTIMIZED RL Adjustment — Epoch {epoch} ==========")
-							logger.info(f"🎯 Action Taken       : {adjustment_metrics['action_description']}")
-							logger.info(f"🧠 Selected by Agent  : Action #{adjustment_metrics['action']} → {adjustment_metrics['action_description']}")
-							logger.info(f"🔧 Resource Allocation: GPUs {info.get('prev_allocation', {}).get('gpu_count', 0)} → {adjustment_metrics['gpu_count']}, "
-									  f"CPUs {info.get('prev_allocation', {}).get('cpu_count', 0)} → {adjustment_metrics['cpu_count']}, "
-									  f"Memory {info.get('prev_allocation', {}).get('memory_gb', 0):.1f}GB → {adjustment_metrics['memory_gb']:.1f}GB")
-							logger.info(f"💰 Reward: {reward:.2f} | Cost: {adjustment_metrics['reward_cost']:.2f} | SLA: {adjustment_metrics['reward_sla']:.2f}")
-							logger.info("==========================================================\n")
-						else:
-							# Just update the state vector for comparison
-							previous_state_vector = current_state_vector.copy()
-							logger.info(f"[OPTIMIZED - epoch {epoch}] No action taken - no significant change detected")
+		# 					# Log detailed RL adjustment summary
+		# 					logger.info(f"\n========== OPTIMIZED RL Adjustment — Epoch {epoch} ==========")
+		# 					logger.info(f"🎯 Action Taken       : {adjustment_metrics['action_description']}")
+		# 					logger.info(f"🧠 Selected by Agent  : Action #{adjustment_metrics['action']} → {adjustment_metrics['action_description']}")
+		# 					logger.info(f"🔧 Resource Allocation: GPUs {info.get('prev_allocation', {}).get('gpu_count', 0)} → {adjustment_metrics['gpu_count']}, "
+		# 							  f"CPUs {info.get('prev_allocation', {}).get('cpu_count', 0)} → {adjustment_metrics['cpu_count']}, "
+		# 							  f"Memory {info.get('prev_allocation', {}).get('memory_gb', 0):.1f}GB → {adjustment_metrics['memory_gb']:.1f}GB")
+		# 					logger.info(f"💰 Reward: {reward:.2f} | Cost: {adjustment_metrics['reward_cost']:.2f} | SLA: {adjustment_metrics['reward_sla']:.2f}")
+		# 					logger.info("==========================================================\n")
+		# 				else:
+		# 					# Just update the state vector for comparison
+		# 					previous_state_vector = current_state_vector.copy()
+		# 					logger.info(f"[OPTIMIZED - epoch {epoch}] No action taken - no significant change detected")
+		# # --- Run the optimized training ---
+		# if not self.training_manager.run_training(
+		# 		gpu_count=test_option['gpu_count'],
+		# 		cpu_count=test_option['cpu_count'],
+		# 		batch_size=optimized_batch_size
+		# ):
+		# 	logger.error("Optimized training failed")
+		# 	optimized_metrics = None
+		# 	optimized_summary = None
+		# else:
+		# 	optimized_csv_path = self.training_manager.output_csv_path
+		# 	if not optimized_csv_path:
+		# 		logger.error("No optimized CSV found")
+		# 		optimized_metrics = None
+		# 		optimized_summary = None
+		# 	else:
+		# 		optimized_metrics = pd.read_csv(optimized_csv_path)
+		# 		optimized_summary = self.training_manager.generate_summary()
+		# 		logger.info(f"Optimized summary: {optimized_summary}")
+				
+		# 		# Add RL processing for optimized phase
+		# 		if optimized_metrics is not None:
+		# 			# Reset environment for optimized phase
+		# 			self.cloud_env.reset()
+		# 			previous_state_vector = None
+					
+		# 			# Process each epoch of optimized metrics
+		# 			for i, row in optimized_metrics.iterrows():
+		# 				try:
+		# 					epoch = int(float(row['epoch']))
+		# 				except (ValueError, TypeError):
+		# 					continue  # Skip any invalid rows
+							
+		# 				# Update environment with optimized metrics
+		# 				state = self.cloud_env.update_metrics(row.to_dict())
+						
+		# 				# Get current state vector
+		# 				current_state_vector = self.cloud_env.state.get_vector()
+						
+		# 				# Log basic metrics
+		# 				logger.info(f"[OPTIMIZED - epoch {epoch}] Metrics stored, SLA met: {self.cloud_env.state.get_overall_sla_compliance()}")
+						
+		# 				# Detect if significant change occurred
+		# 				if previous_state_vector is None or self._detect_significant_change(current_state_vector, previous_state_vector):
+		# 					previous_state_vector = current_state_vector.copy()
+							
+		# 					# Select action based on learned policy
+		# 					action_idx, action_one_hot, _ = self.agent.select_action(state, explore=False)
+							
+		# 					# Calculate reward and update state
+		# 					next_state, reward, done, info = self.cloud_env.step(action_idx)
+							
+		# 					# Get adjustment details
+		# 					adjustment_metrics = self.cloud_env.log_adjustment_details(
+		# 						action_idx,
+		# 						info.get('prev_allocation', {}),
+		# 						self.cloud_env.current_allocation,
+		# 						reward
+		# 					)
+							
+		# 					# Save metrics for reporting
+		# 					self.metrics_tracker.add_adjustment_metrics(adjustment_metrics)
+							
+		# 					# Log detailed RL adjustment summary
+		# 					logger.info(f"\n========== OPTIMIZED RL Adjustment — Epoch {epoch} ==========")
+		# 					logger.info(f"🎯 Action Taken       : {adjustment_metrics['action_description']}")
+		# 					logger.info(f"🧠 Selected by Agent  : Action #{adjustment_metrics['action']} → {adjustment_metrics['action_description']}")
+		# 					logger.info(f"🔧 Resource Allocation: GPUs {info.get('prev_allocation', {}).get('gpu_count', 0)} → {adjustment_metrics['gpu_count']}, "
+		# 							  f"CPUs {info.get('prev_allocation', {}).get('cpu_count', 0)} → {adjustment_metrics['cpu_count']}, "
+		# 							  f"Memory {info.get('prev_allocation', {}).get('memory_gb', 0):.1f}GB → {adjustment_metrics['memory_gb']:.1f}GB")
+		# 					logger.info(f"💰 Reward: {reward:.2f} | Cost: {adjustment_metrics['reward_cost']:.2f} | SLA: {adjustment_metrics['reward_sla']:.2f}")
+		# 					logger.info("==========================================================\n")
+		# 				else:
+		# 					# Just update the state vector for comparison
+		# 					previous_state_vector = current_state_vector.copy()
+		# 					logger.info(f"[OPTIMIZED - epoch {epoch}] No action taken - no significant change detected")
 
 		# Store optimized information
 		optimized_info = {}
@@ -4051,3 +4240,4 @@ def main():
 
 if __name__ == "__main__":
 	main()
+
